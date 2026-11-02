@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>التخزين السحابي باستخدام Google Drive</title>
+  <style>
+    :root { --navy:#173b70; --blue:#2868b2; --pale:#eef5ff; --ink:#202b3c; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:Tahoma, Arial, sans-serif; background:#f5f8fd; color:var(--ink); line-height:1.9; }
+    header { color:white; text-align:center; padding:42px 18px 34px; background:linear-gradient(125deg,#142f5c,#2878c8); }
+    header h1 { margin:0 0 12px; font-size:clamp(25px,4vw,38px); }
+    header p { margin:4px 0; font-size:17px; }
+    nav { background:#10294e; padding:12px; text-align:center; position:sticky; top:0; }
+    nav a { color:white; text-decoration:none; margin:0 15px; font-weight:bold; }
+    nav a:hover { text-decoration:underline; }
+    main { max-width:1050px; margin:28px auto; padding:0 18px; }
+    section { background:white; border:1px solid #dbe7f7; border-radius:15px; padding:24px; margin-bottom:22px; box-shadow:0 5px 18px #193d6810; }
+    h2 { color:var(--navy); border-right:5px solid var(--blue); padding-right:12px; margin-top:0; }
+    h3 { color:#245a98; margin-bottom:6px; }
+    .hero-img { width:100%; max-height:390px; object-fit:contain; background:#eef5ff; border-radius:12px; display:block; margin:15px auto 4px; }
+    table { width:100%; border-collapse:collapse; margin-top:15px; text-align:center; }
+    th,td { border:1px solid #9eb7d8; padding:11px; }
+    th { background:#dceaff; color:#173b70; }
+    tr:nth-child(even) { background:#f5f9ff; }
+    a { color:#155ba7; }
+    footer { text-align:center; color:#fff; background:#173b70; padding:17px; margin-top:35px; }
+    @media(max-width:600px) { nav a { display:inline-block; margin:4px 8px; } section { padding:17px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>التخزين السحابي باستخدام Google Drive</h1>
+    <p><strong>اسم الطالبة:</strong> منه رضا سيد احمد ابو ريه يونس</p>
+    <p><strong>الكود الجامعي:</strong> 2500268</p>
+    <p><strong>المقرر:</strong> تطبيقات الإنترنت والمنصات الإلكترونية</p>
+  </header>
+
+  <nav>
+    <a href="#intro">المقدمة</a>
+    <a href="#topic">عرض الموضوع</a>
+    <a href="#table">جدول توضيحي</a>
+    <a href="#references">المراجع</a>
+  </nav>
+
+  <main>
+    <section id="intro">
+      <h2>أولًا: المقدمة</h2>
+      <p>
+        أصبح <strong>التخزين السحابي</strong> من التقنيات المهمة في عصر الإنترنت،
+        حيث يتيح للمستخدم حفظ الملفات والبيانات على خوادم متصلة بالإنترنت بدلًا
+        من الاعتماد على ذاكرة الجهاز فقط. وتساعد هذه التقنية على الوصول إلى
+        الملفات من أماكن وأجهزة مختلفة، كما تسهّل مشاركة المستندات والعمل عليها.
+      </p>
+      <img class="hero-img" src="data:image/png;base64,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"
+           alt="رسم توضيحي للتخزين السحابي وحفظ الملفات والوصول إليها عبر الإنترنت">
+    </section>
+
+    <section id="topic">
+      <h2>ثانيًا: عرض الموضوع</h2>
+      <h3>1- مفهوم التخزين السحابي</h3>
+      <p>
+        التخزين السحابي هو خدمة تتيح حفظ الصور والمستندات والفيديوهات والملفات
+        على خوادم عبر الإنترنت، بحيث يستطيع المستخدم الوصول إليها عند الاتصال
+        بالإنترنت وتسجيل الدخول إلى حسابه.
+      </p>
+
+      <h3>2- ما هو Google Drive؟</h3>
+      <p>
+        <strong>Google Drive</strong> خدمة تخزين سحابي تقدمها شركة Google،
+        وتسمح للمستخدم برفع الملفات وتنظيمها في مجلدات، والبحث عنها، ومشاركتها
+        مع أشخاص آخرين. كما تتكامل مع تطبيقات مثل Google Docs وGoogle Sheets
+        وGoogle Slides لإنشاء الملفات وتعديلها عبر الإنترنت.
+      </p>
+
+      <h3>3- كيف يعمل Google Drive؟</h3>
+      <p>
+        يبدأ المستخدم بتسجيل الدخول إلى حساب Google، ثم يرفع الملفات من جهازه
+        إلى Drive. تُحفظ الملفات على خوادم الخدمة، ويمكن فتحها لاحقًا من هاتف
+        أو حاسوب آخر. وعند مشاركة ملف، يستطيع المستخدم تحديد الأشخاص الذين
+        يمكنهم مشاهدته أو التعليق عليه أو تعديله.
+      </p>
+
+      <h3>4- أهم الاستخدامات</h3>
+      <p>
+        يُستخدم Google Drive لحفظ ملفات الدراسة والعمل، والاحتفاظ بنسخ من الصور
+        والمستندات، ومشاركة الأبحاث والعروض التقديمية، والتعاون مع الزملاء في
+        تعديل الملف نفسه دون الحاجة إلى إرسال نسخ متعددة.
+      </p>
+
+      <h3>5- المميزات</h3>
+      <ul>
+        <li>إمكانية الوصول إلى الملفات من أجهزة مختلفة.</li>
+        <li>سهولة مشاركة الملفات والمجلدات.</li>
+        <li>التكامل مع تطبيقات Google المكتبية.</li>
+        <li>تنظيم الملفات والبحث عنها بسهولة.</li>
+        <li>إمكانية التعاون على المستندات في الوقت نفسه.</li>
+      </ul>
+
+      <h3>6- بعض العيوب وطرق الحفاظ على الأمان</h3>
+      <p>
+        يحتاج استخدام الخدمة إلى اتصال بالإنترنت في كثير من الحالات، كما أن
+        مساحة التخزين المجانية محدودة وقد يحتاج المستخدم إلى مساحة إضافية.
+        وللحفاظ على الأمان، يُنصح باستخدام كلمة مرور قوية، وتفعيل التحقق بخطوتين،
+        وعدم مشاركة روابط الملفات الحساسة مع أشخاص غير موثوق بهم.
+      </p>
+
+      <h3>7- مثال عملي للطالب</h3>
+      <p>
+        يمكن للطالب رفع البحث الجامعي على Google Drive، ثم مشاركة الرابط مع
+        زملائه أو الدكتور مع اختيار صلاحية العرض فقط أو التعديل حسب الحاجة.
+        وبهذه الطريقة يسهل تسليم الملفات والتعاون عليها.
+      </p>
+
+      <h3>الخلاصة</h3>
+      <p>
+        يُعد Google Drive مثالًا واضحًا على فائدة التخزين السحابي؛ فهو يساعد
+        على حفظ الملفات وتنظيمها والوصول إليها ومشاركتها بسهولة. ومع اتباع
+        إرشادات الأمان، يمكن الاستفادة منه في الدراسة والعمل والحياة اليومية.
+      </p>
+    </section>
+
+    <section id="table">
+      <h2>ثالثًا: جدول توضيحي</h2>
+      <p>يوضح الجدول بعض الوظائف الأساسية في Google Drive:</p>
+      <table>
+        <tr>
+          <th>الوظيفة</th>
+          <th>كيفية استخدامها</th>
+          <th>الفائدة</th>
+        </tr>
+        <tr>
+          <td>رفع الملفات</td>
+          <td>اختيار ملف من الجهاز ورفعه إلى Drive</td>
+          <td>حفظ الملفات عبر الإنترنت</td>
+        </tr>
+        <tr>
+          <td>إنشاء مجلد</td>
+          <td>إنشاء مجلد جديد وتنظيم الملفات بداخله</td>
+          <td>سهولة ترتيب المحتوى</td>
+        </tr>
+        <tr>
+          <td>مشاركة ملف</td>
+          <td>إرسال رابط وتحديد صلاحية الوصول</td>
+          <td>التعاون وتبادل المعلومات</td>
+        </tr>
+        <tr>
+          <td>التعديل المشترك</td>
+          <td>فتح مستند باستخدام تطبيقات Google</td>
+          <td>العمل الجماعي وتوفير الوقت</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="references">
+      <h2>رابعًا: المراجع</h2>
+      <ul>
+        <li><a href="https://www.google.com/drive/" target="_blank" rel="noopener">الموقع الرسمي لخدمة Google Drive</a></li>
+        <li><a href="https://support.google.com/drive/" target="_blank" rel="noopener">مركز مساعدة Google Drive</a></li>
+        <li><a href="https://support.google.com/accounts/" target="_blank" rel="noopener">مركز مساعدة حساب Google والأمان</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    تم إعداد هذا التقرير لمقرر تطبيقات الإنترنت والمنصات الإلكترونية
+  </footer>
+</body>
+</html>
